@@ -1,0 +1,12 @@
+﻿namespace CA_Northwınd.Entities
+{
+    public class Category
+    {
+        public int CategoryId { get; set; }
+        public string CategoryName { get; set; }
+        public string Description { get; set; }
+
+        //bir kategorini bir çok ürünü olur
+        public virtual List<Product> Products { get; set;}
+    }
+}
